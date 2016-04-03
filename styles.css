@@ -1,0 +1,62 @@
+.navbar{
+    margin-bottom:0px;
+    border-radius:0px;
+
+}
+
+#hero{
+    width:100%;
+}
+
+#header{
+    text-align: right;
+    color: white;
+    margin-top: -26%;
+    right: 4%;
+    position: absolute;
+    font-size: 59px;
+}
+
+#cta-button{
+    margin-top: -14%;
+    right: 15%;
+    position: absolute;
+    background-color: #FFC151;
+    font-size: 22px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+    height: 65px;
+    line-height:33px;
+    font-size: 22px;
+    color: #FFC151;
+}
+
+.feature{
+    background-color: #426AAF;   
+    color:white;
+    padding-bottom:200px;
+    padding-left:3%;
+    padding-right:3%;
+}
+
+.features{
+    background-color: #426AAF;   
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.fa{
+    font-size:40px;
+    margin-top:10%;
+}
+
+.col-md-1{
+    width:12.5%;
+    background-color: #426AAF;  
+    padding-bottom:200px;
+}
+
