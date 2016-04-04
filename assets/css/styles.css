@@ -32,7 +32,7 @@
     height: 65px;
     line-height:33px;
     font-size: 22px;
-    color: #FFC151;
+    color: white;
 }
 
 .feature{
@@ -60,3 +60,12 @@
     padding-bottom:200px;
 }
 
+#hero-upper{
+    background-color: #426AAF;
+    height:150px;
+}
+
+#hero-lower{
+    background-color: #92AEDE;
+    height:25px;
+}

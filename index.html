@@ -1,14 +1,42 @@
-<nav class="navbar navbar-inverse">
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Crawford County Historical Society</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!--JavaScript-->
+    <script src="assets/js/jquery-1.12.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--<script src="assets/js/angular.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <!--<script src="assets/js/angular-route.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    
+    <!--Fonts-->
+    <link rel="font" href="assets/fonts/fontawesome-webfont.woff">
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">Crawford County Historical Society</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Virtual Tour</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="#/about">About Us</a></li>
+                <li><a href="#/tour">Virtual Tour</a></li>
+                <li><a href="#/gallery">Gallery</a></li>
+                <li><a href="#/membership">Membership</a></li>
+                <li><a href="#/events">Events</a></li>
             </ul>
         </div>
     </nav>
+    <div ng-view></div>
+
+</body>
+</html>
