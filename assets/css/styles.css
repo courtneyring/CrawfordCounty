@@ -8,6 +8,17 @@
     width:100%;
 }
 
+#hero-lower{
+    background-color: #426AAF;
+    height:20px;
+}
+
+#logo{
+    height:65px;
+    width:auto;
+    padding:5px;
+}
+
 #header{
     text-align: right;
     color: white;
@@ -35,6 +46,9 @@
     color: white;
 }
 
+
+
+/* Home */
 .feature{
     background-color: #426AAF;   
     color:white;
@@ -60,12 +74,8 @@
     padding-bottom:200px;
 }
 
-#hero-upper{
-    background-color: #426AAF;
-    height:150px;
-}
 
-#hero-lower{
-    background-color: #92AEDE;
-    height:25px;
+/* Events */
+.events{
+    margin-top:5%;
 }
