@@ -46,6 +46,51 @@
     color: white;
 }
 
+.hero{
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 220px;
+}
+
+.about-hero{
+    background-image: url("../../assets/img/MichiganAve.png");
+    background-position: 94% 57%;
+    background-size: 110%;
+
+}
+
+.museum-hero{
+    background-image: url("../../assets/img/MuseumHero.jpg");
+    background-position: 100% 43%;
+}
+
+.events-hero{
+    background-image: url("../../assets/img/EventsHero.jpg");
+    background-position:100% 56%;
+}
+
+.page-title{
+    margin-left:5%;
+    margin-top:35px;
+}
+
+.page-title-rule{
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+.body-content{
+    padding-left:8.3333%;
+    padding-right:8.3333%;
+    padding-bottom:5%;
+}
+
+iframe{
+    width:90%;
+    height:250px;
+}
+
 
 
 /* Home */
@@ -75,7 +120,103 @@
 }
 
 
-/* Events */
-.events{
-    margin-top:5%;
+/*About*/
+
+
+.section-1, .section-2, .section-3{
+    color:black;
+}
+
+.section-1{
+    background-color:#426AAF;
+    margin-right: 1%;
+    margin-left: 11.5%;
+    color:white;
+}
+
+.section-2{
+    background-color:#FFC151;
+    padding-bottom:6%;
+}
+
+.large-icon{
+    font-size:71px;
+    margin-top: 15%;
+    color:black;
+}
+
+.small-arrow{
+    font-size:18px;
+}
+
+.click-here{
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+.section-3{
+    margin-left: 1%;
+    margin-right: 11.5%;
+    background-color:#426AAF;
+    padding-bottom:6%;
+}
+
+
+/*Events*/
+.calendar-text { margin-top: .3em; }
+
+.fa-calendar-o{
+    font-size:75px;
+}
+
+/*Museum*/
+.museum-address{
+    font-size:17px;
+}
+
+
+
+/*Gallery*/
+.fancybox>img{
+    width:100%;
+    border: solid 5px black;
+    margin-top:10%;
+}
+
+
+/*Footer*/
+
+.footer{
+    background-color:black;
+    color:white;
+
+}
+
+.footer-upper{
+    padding-bottom:4%;
+}
+
+.footer-lower{
+    padding-bottom:1%;
+    padding-right:2%;
+    font-size:16px;
+}
+
+.footer-col{
+    padding-left:4%;
+    padding-right:4%;
+}
+
+.footer-title{
+    font-size: 20px;
+    text-align:center;
+    color:white;
+}
+
+.footer-rule{
+    border-top: 1px solid grey;
+    margin-left: 5%;
+    margin-right: 5%;
 }

@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="page-title">Gallery</h1>
+            <hr class="page-title-rule">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row" ng-controller="galleryController">
+        <div ng-repeat="image in images" class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+            <a class="fancybox" rel="gallery1" href=assets/img/gallery/{{image}} title="">
+	           <img src=assets/img/gallery/{{image}} alt="" />
+            </a>
+        </div>
+    </div>
+</div>
+

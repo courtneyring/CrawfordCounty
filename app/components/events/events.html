@@ -1,15 +1,31 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8 events" ng-controller="eventsController">
-            <div ng-repeat="event in events">
-                <h4>{{event.name}}</h4>
-                <p ng-repeat="date in event.date">{{date.weekDay}}, {{date.month}} {{date.day}}, {{date.year}}</p>
-                <p>{{event.description}}</p>
-                <hr>
-            </div>
+        <div class="col-xs-12  hero events-hero">
         </div>
-        <div class="col-xs-2"></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="page-title">Events</h1>
+            <hr class="page-title-rule">
+        </div>
+    </div>
+</div>
+<div class="container-fluid" ng-controller="eventsController">
+    <div class="row body-content" >
+        <!--<div class="col-xs-2 text-right" ng-repeat="date in event.date">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-calendar-o fa-stack-2x"></i>
+                <strong class="fa-stack-1x calendar-text">{{date.day}}</strong>
+            </span>
+        </div>-->
+        <div class="col-xs-12" ng-repeat="event in events">
+            <h4>{{event.name}}</h4>
+            <p ng-repeat="date in event.date">{{date.weekDay}}, {{date.month}} {{date.day}}, {{date.year}}</p>
+            <p>{{event.description}}</p>
+            <hr>
+        </div>
     </div>
 </div>
 

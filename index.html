@@ -7,32 +7,46 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     
     <!--JavaScript-->
     <script src="assets/js/jquery-1.12.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!--<script src="assets/js/angular.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <!--<script src="assets/js/angular-route.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>
     <script src="app/app.js"></script>
+
+    <!--Controllers-->
+    <script type="text/javascript" src="app/components/museum/gallery/galleryController.js"></script>
+    <script type="text/javascript" src="app/components/events/eventsController.js"></script>
     
     <!--Fonts-->
     <link rel="font" href="assets/fonts/fontawesome-webfont.woff">
     
+    
 </head>
 <body>
+    
+    
+    
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="#/"><img src="assets/img/CourtneyRingLogo.png" id="logo"></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/about">About Us</a></li>
-                <li><a href="#/tour">Virtual Tour</a></li>
-                <li><a href="#/gallery">Gallery</a></li>
-                <li><a href="#/membership">Membership</a></li>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/about">About</a></li>
                 <li><a href="#/events">Events</a></li>
+                <li><a href="#/museum">Museum</a></li>
+                <!--<li><a href="#/history">History</a></li>-->
+                <li><a href="#/membership">Membership</a></li>
             </ul>
         </div>
     </nav>
@@ -41,6 +55,31 @@
         </div>
     </div>
     <div ng-view></div>
+
+    <div class="container-fluid footer">
+        <hr class="footer-rule">
+        <div class="row footer-upper">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-col">
+                <h4 class="footer-title">Contact Us</h4>
+                <p><strong>Email:</strong><br>address@email.com</p>
+                <p><strong>Phone: </strong><br>555-555-5555</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-col">
+                <h4 class="footer-title">Visit Us</h4>
+                <p><strong>Address:</strong><br>000 Street Name<br>City, State Zip</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.8505399802675!2d-84.71720358452077!3d44.66140519466946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882011411ddf3bef%3A0x22e70df983887b6!2sCrawford+County+Historical+Museum!5e0!3m2!1sen!2sus!4v1460244247057" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-col">
+                <h4 class="footer-title">Share Us</h4>
+            </div>
+        </div>
+        <div class="row text-right footer-lower">
+            <div class="col-xs-12">Designed and Developed by <a href="courtney-ring.com">Courtney Ring</a></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 
 </body>
 </html>
