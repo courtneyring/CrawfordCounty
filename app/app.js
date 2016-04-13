@@ -1,5 +1,5 @@
 
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'ui.bootstrap']);
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -51,3 +51,6 @@ app.controller('aboutController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
+app.controller('indexController', function($scope) {
+  $scope.isCollapsed = false;
+});
