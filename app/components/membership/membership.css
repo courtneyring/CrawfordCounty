@@ -1,0 +1,10 @@
+.membership-hero{
+    background-image: url("../../../assets/img/MembershipHero.jpg");
+    background-position: 3% 68%;
+    background-size: 102%;
+}
+
+
+.promo-group p{
+    min-height:50%;
+}

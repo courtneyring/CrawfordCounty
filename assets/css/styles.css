@@ -1,7 +1,30 @@
+/* Navbar */
 .navbar{
     margin-bottom:0px;
     border-radius:0px;
 
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+    height: 65px;
+    line-height:33px;
+    font-size: 22px;
+    color: white;
+}
+
+#logo{
+    height:65px;
+    width:auto;
+    padding:5px;
+}
+
+
+/* Hero */
+.hero{
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 220px;
 }
 
 #hero{
@@ -13,63 +36,8 @@
     height:20px;
 }
 
-#logo{
-    height:65px;
-    width:auto;
-    padding:5px;
-}
 
-#header{
-    text-align: right;
-    color: white;
-    margin-top: -26%;
-    right: 4%;
-    position: absolute;
-    font-size: 59px;
-}
-
-#cta-button{
-    margin-top: -14%;
-    right: 15%;
-    position: absolute;
-    background-color: #FFC151;
-    font-size: 22px;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
-    height: 65px;
-    line-height:33px;
-    font-size: 22px;
-    color: white;
-}
-
-.hero{
-    background-position: center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 220px;
-}
-
-.about-hero{
-    background-image: url("../../assets/img/MichiganAve.png");
-    background-position: 94% 57%;
-    background-size: 110%;
-
-}
-
-.museum-hero{
-    background-image: url("../../assets/img/MuseumHero.jpg");
-    background-position: 100% 43%;
-}
-
-.events-hero{
-    background-image: url("../../assets/img/EventsHero.jpg");
-    background-position:100% 56%;
-}
-
+/* Page Title */
 .page-title{
     margin-left:5%;
     margin-top:35px;
@@ -83,119 +51,18 @@
 .body-content{
     padding-left:8.3333%;
     padding-right:8.3333%;
-    padding-bottom:5%;
+
 }
-
-iframe{
-    width:90%;
-    height:250px;
-}
-
-
-
-/* Home */
-.feature{
-    background-color: #426AAF;   
-    color:white;
-    padding-bottom:200px;
-    padding-left:3%;
-    padding-right:3%;
-}
-
-.features{
-    background-color: #426AAF;   
-    padding-left:5%;
-    padding-right:5%;
-}
-
-.fa{
-    font-size:40px;
-    margin-top:10%;
-}
-
-/*.col-md-1{
-    width:12.5%;
-    background-color: #426AAF;  
-    padding-bottom:200px;
-}*/
-
-
-/*About*/
-
-
-.section-1, .section-2, .section-3{
-    color:black;
-}
-
-.section-1{
-    background-color:#426AAF;
-    margin-right: 1%;
-    margin-left: 11.5%;
-    color:white;
-}
-
-.section-2{
-    background-color:#FFC151;
-    padding-bottom:6%;
-}
-
-.large-icon{
-    font-size:71px;
-    margin-top: 15%;
-    color:black;
-}
-
-.small-arrow{
-    font-size:18px;
-}
-
-.click-here{
-    color: black;
-    font-size: 14px;
-    font-weight: 900;
-}
-
-
-.section-3{
-    margin-left: 1%;
-    margin-right: 11.5%;
-    background-color:#426AAF;
-    padding-bottom:6%;
-}
-
-
-/*Events*/
-.calendar-text { margin-top: .3em; }
-
-.fa-calendar-o{
-    font-size:75px;
-}
-
-/*Museum*/
-/*.museum-address{
-    font-size:17px;
-}*/
-
-
-
-/*Gallery*/
-.fancybox>img{
-    width:100%;
-    border: solid 5px black;
-    margin-top:10%;
-}
-
 
 /*Footer*/
-
 .footer{
     background-color:black;
     color:white;
-
+    margin-top:5%;
 }
 
 .footer-upper{
-    padding-bottom:4%;
+
 }
 
 .footer-lower{
@@ -220,3 +87,92 @@ iframe{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+iframe{
+    width:100%;
+    height:250px;
+}
+
+.social-icon{
+    font-size:30px;
+}
+
+.facebook-icon{
+    text-align:right;
+    color:#3b5998;
+    padding-right:2%;
+}
+
+.linkedin-icon{
+    text-align:right;
+    color:#007bb5;
+    margin-top:4%;
+    padding-right:2%;
+}
+
+.twitter-icon{
+    text-align:left;
+    color:#55acee;
+    padding-left:2%;
+}
+
+.email-icon, .email-icon>a{
+    text-align:left;
+    margin-top:4%;
+    color:#a5abaf;
+    padding-left:2%;
+}
+
+
+.fa-stack-1x {
+    color: white;
+}
+
+/* Shared */
+.promo-group{
+    height: 271px;
+}
+
+.promo-1, .promo-2, .promo-3{
+    color:black;
+    height:100%;
+}
+
+.promo-1{
+    background-color:#426AAF;
+    margin-right: 1%;
+    margin-left: 11.5%;
+    color:black;
+    /*padding-bottom:20px;*/
+}
+
+.promo-2{
+    background-color:#FFC151;
+    /*padding-bottom:6%;*/
+}
+
+.promo-3{
+    margin-left: 1%;
+    margin-right: 11.5%;
+    background-color:#426AAF;
+   /* padding-bottom:6%;*/
+}
+
+.large-icon{
+    font-size:71px;
+    margin-top: 15%;
+    color:black;
+}
+
+.small-arrow{
+    font-size:18px;
+}
+
+.click-here{
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+
