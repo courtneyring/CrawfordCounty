@@ -8,3 +8,21 @@
 .promo-group p{
     min-height:50%;
 }
+
+.membership{
+    background-color:rgb(66,106,175);
+    color:white;
+}
+
+.donations{
+    background-color:rgb(255,193,81);
+}
+
+.foundation-fund{
+    background-color:rgb(66,106,175);
+    color:white;
+}
+
+.membership, .donations, .foundation-fund{
+    margin-top:3%;
+}

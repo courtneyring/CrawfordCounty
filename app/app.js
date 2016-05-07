@@ -1,13 +1,13 @@
 
-var app = angular.module('app', ['ngRoute', 'ui.bootstrap']);
+var app = angular.module('app', ['ngRoute', 'ui.bootstrap', 'angular-timeline']);
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
 
 
         .when('/', {
-            templateUrl : 'app/components/home/home.html',
-            controller  : 'homeController'
+            templateUrl : 'app/components/history/history.html',
+            controller  : 'historyController'
         })
 
         .when('/about', {
@@ -27,7 +27,7 @@ app.config(function($routeProvider) {
     
         .when('/history', {
             templateUrl : 'app/components/history/history.html',
-            controller  : 'homeController'
+            controller  : 'historyController'
         })
     
         .when('/museum', {
@@ -38,6 +38,8 @@ app.config(function($routeProvider) {
             templateUrl : 'app/components/museum/gallery/gallery.html',
             controller  : 'galleryController'
         });
+    
+        $locationProvider.html5Mode(true);
 });
 
 

@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-xs-12">
+        <br><br><br>
+  <timeline>
+    <timeline-event ng-repeat="event in events" side="left">
+      <timeline-badge class="{{event.badgeClass}}">
+        <i class="glyphicon {{event.badgeIconClass}}"></i>
+      </timeline-badge>
+      <timeline-panel class="{{event.badgeClass}}">
+        <timeline-heading>
+          <h4>{{event.title}}</h4>
+        </timeline-heading>
+        <p>{{event.content}}</p>
+      </timeline-panel>
+    </timeline-event>
+  </timeline>
+    </div>
+</div>  
+

@@ -34,4 +34,9 @@
     font-size: 22px;
     padding-left: 3%;
     padding-right: 3%;
+    color:black;
+}
+
+.footer{
+    margin-top:0px;
 }
