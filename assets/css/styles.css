@@ -5,6 +5,10 @@
 
 }
 
+.navbar .nav>li:hover>.dropdown-menu {
+  display: block;
+}
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
     height: 65px;
     line-height:33px;

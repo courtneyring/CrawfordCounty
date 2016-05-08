@@ -6,8 +6,8 @@ app.config(function($routeProvider, $locationProvider) {
 
 
         .when('/', {
-            templateUrl : 'app/components/history/history.html',
-            controller  : 'historyController'
+            templateUrl : 'app/components/home/home.html',
+            controller  : 'homeController'
         })
 
         .when('/about', {
@@ -53,6 +53,29 @@ app.controller('aboutController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
-app.controller('indexController', function($scope) {
-  $scope.isCollapsed = false;
+app.controller('MainCtrl', function($scope) {
+    $scope.name = 'World';
 });
+
+app.controller('DropdownCtrl', function($scope, $log) {
+
+      $scope.items = [
+        'The first choice!',
+        'And another choice for you.',
+        'but wait! A third!'
+      ];
+
+      $scope.status = {
+        isopen: false
+      };
+
+      $scope.toggled = function(open) {
+        $log.log('Dropdown is now: ', open);
+      };
+
+      $scope.toggleDropdown = function($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.isopen = !$scope.status.isopen;
+      };
+    });
