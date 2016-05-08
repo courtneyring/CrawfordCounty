@@ -1,5 +1,5 @@
 
-var app = angular.module('app', ['ngRoute', 'ui.bootstrap', 'angular-timeline']);
+var app = angular.module('app', ['ngRoute', 'ui.bootstrap', 'angular-timeline', 'angular-scroll-animate']);
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider

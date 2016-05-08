@@ -1,5 +1,5 @@
-$(document).ready(function() {
-	$(".fancybox").fancybox({
+/*angular.element(document).ready(function() {
+	angular.element(fancybox).fancybox({
 		openEffect	: 'none',
 		closeEffect	: 'none',
         helpers : {
@@ -13,8 +13,8 @@ $(document).ready(function() {
     
 });
 
-$(document).ready(function() {
-	$(".fancybox-button").fancybox({
+angular.element(document).ready(function() {
+	angular.element(fancybox-button).fancybox({
 		prevEffect		: 'none',
 		nextEffect		: 'none',
 		closeBtn		: false,
@@ -23,6 +23,6 @@ $(document).ready(function() {
 			buttons	: {}
 		}
 	});
-});
+});*/
 
 
