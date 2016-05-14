@@ -52,13 +52,14 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <div class="fa fa-bars"></div>
             </button>
-            <a class="navbar-brand" href="/index">Home</a>
+            
         </div>
         <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a class="navbar-brand" href="/">Home</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right" ng-controller="DropdownCtrl">
                 <li><a href="/about">About</a></li>
                 <li><a href="/history">History</a></li>
