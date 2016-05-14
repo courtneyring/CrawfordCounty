@@ -34,6 +34,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl : 'app/components/museum/museum.html',
             controller  : 'galleryController'
         })
+        .when('/museum/exhibits', {
+            templateUrl : 'app/components/museum/exhibits/exhibits.html',
+            controller  : 'exhibitsController'
+        })
         .when('/museum/gallery', {
             templateUrl : 'app/components/museum/gallery/gallery.html',
             controller  : 'galleryController'

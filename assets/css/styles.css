@@ -2,10 +2,25 @@
 .navbar{
     margin-bottom:0px;
     border-radius:0px;
-
+    background-color:black;
+    color:white;
 }
 
-.navbar .nav>li:hover>.dropdown-menu {
+
+
+.navbar .nav>li>a{
+    text-shadow:none;
+    color:white;
+    font-size:18px;
+    line-height:30px;
+}
+
+.fa-caret-down{
+    color:white;
+    
+}
+
+/*.navbar .nav>li:hover>.dropdown-menu {
   display: block;
 }
 
@@ -20,7 +35,7 @@
     height:60px;
     width:auto;
     padding:0px;
-}
+}*/
 
 
 /* Hero */

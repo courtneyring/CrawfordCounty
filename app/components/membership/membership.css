@@ -25,4 +25,12 @@
 
 .membership, .donations, .foundation-fund{
     margin-top:3%;
+    padding-bottom:15px;
+    min-height:296px;
+}
+
+.donate-button{
+        color: white;
+    border: none;
+    background-color: #EB4D4D;
 }
