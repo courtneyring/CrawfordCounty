@@ -17,9 +17,13 @@ app.config(function($routeProvider, $locationProvider) {
     
         .when('/events', {
             templateUrl : 'app/components/events/events.html',
-            controller  : 'eventsController'
+            controller  : 'editController'
         })
-
+    
+        .when('/events/edit', {
+            templateUrl : 'app/components/events/edit.html',
+            controller  : 'editController'
+        })
         .when('/membership', {
             templateUrl : 'app/components/membership/membership.html',
             controller  : 'homeController'

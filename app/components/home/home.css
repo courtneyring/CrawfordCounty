@@ -1,9 +1,28 @@
+.mobile-hero{
+    height:0px;
+}
+
+
+@media(max-width:480px){
+    .mobile-hero{
+        background-color: #FFC151;
+        height:100px;
+    }
+}
+
+
 .feature{
     background-color: #426AAF;   
     color:white;
     padding-bottom:200px;
     padding-left:3%;
     padding-right:3%;
+}
+
+@media(max-width:992px){
+    .feature{
+        padding-bottom:50px;
+    }
 }
 
 .features{
@@ -17,14 +36,29 @@
     margin-top:10%;
 }
 
+
 #header{
     text-align: right;
     color: white;
     margin-top: -26%;
     right: 4%;
     position: absolute;
-    font-size: 59px;
+    font-size: 60px;
 }
+
+
+@media(min-width:768px){
+    #header{
+        font-size: 38px;
+    }
+}
+
+@media(max-width:480px){
+    #header{
+        display:none;
+    }
+}
+
 
 #cta-button{
     margin-top: -14%;
@@ -35,6 +69,12 @@
     padding-left: 3%;
     padding-right: 3%;
     color:black;
+}
+
+@media(max-width:480px){
+    #cta-button{
+        display:none;
+    }
 }
 
 .footer{
