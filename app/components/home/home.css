@@ -1,14 +1,138 @@
-.mobile-hero{
-    height:0px;
+.home-hero{
+    background-image: url("../../../assets/img/hero3.png");
+    background-position: 3% 68%;
+    background-size: 102%;
+    height:550px;
+}
+
+@media(max-width:1200px){
+    .home-hero{
+        height:455px;
+    }
+}
+
+@media(max-width:992px){
+    .home-hero{
+        height:300px
+    }
 }
 
 
+#header{
+    text-align: right;
+    color: white;
+    right: 4%;
+    position: absolute;
+    font-size:80px;
+    top:24%;
+}
+
+@media(max-width:1200px){
+    #header{
+        font-size:60px;
+        top:24%;
+    }
+}
+
+@media(max-width:992px){
+    #header{
+        font-size:50px;
+        top:18%;
+    }
+}
+
+@media(max-width:768px){
+    #header{
+        display:none;
+    }
+}
+
 @media(max-width:480px){
+    #header{
+        display:none;
+    }
+}
+
+
+#cta-button{
+    top: 57%;
+    right: 7%;
+    position: absolute;
+    background-color: #FFC151;
+    font-size: 22px;
+    padding-left: 3%;
+    padding-right: 3%;
+    color:black;
+}
+
+@media(max-width:1200px){
+    #cta-button{
+        top: 50%;
+    }
+}
+
+@media(max-width:992px){
+    #cta-button{
+        top:40%;
+    }
+}
+
+@media(max-width:768px){
+    #cta-button{
+        display:none;
+    }
+}
+
+.mobile-hero{
+    height:0px;
+    text-align:center;
+}
+
+.mobile-hero>h4{
+    background-color: black;
+    color:white;
+    margin-right: 40%;
+    margin-left: 40%;
+    border-radius: 20px;
+    padding: 1%;
+
+}
+
+@media(max-width:768px){
     .mobile-hero{
         background-color: #FFC151;
         height:100px;
     }
+    .mobile-hero>h2{
+        font-size: 27px;
+    }
+    .mobile-hero>h4{
+        margin-right:35%;
+        margin-left:35%;
+    }
+
 }
+
+@media(max-width:480px){
+    .mobile-hero{
+        background-color: #FFC151;
+        height:85px;
+    }
+    .mobile-hero>h2{
+        font-size: 18px;
+    }
+    .mobile-hero>h4{
+        margin-right:32%;
+        margin-left:32%;
+        font-size:14px;
+    }
+}
+
+
+
+
+
+
 
 
 .feature{
@@ -37,45 +161,8 @@
 }
 
 
-#header{
-    text-align: right;
-    color: white;
-    margin-top: -26%;
-    right: 4%;
-    position: absolute;
-    font-size: 60px;
-}
 
 
-@media(min-width:768px){
-    #header{
-        font-size: 38px;
-    }
-}
-
-@media(max-width:480px){
-    #header{
-        display:none;
-    }
-}
-
-
-#cta-button{
-    margin-top: -14%;
-    right: 15%;
-    position: absolute;
-    background-color: #FFC151;
-    font-size: 22px;
-    padding-left: 3%;
-    padding-right: 3%;
-    color:black;
-}
-
-@media(max-width:480px){
-    #cta-button{
-        display:none;
-    }
-}
 
 .footer{
     margin-top:0px;

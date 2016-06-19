@@ -59,20 +59,20 @@
         </div>
         <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
             <ul class="nav navbar-nav navbar-left">
-                <li><a class="navbar-brand" href="/">Home</a></li>
+                <li ng-click="navCollapsed=true"><a class="navbar-brand" href="/">Home</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right" ng-controller="DropdownCtrl">
-                <li><a href="/about">About</a></li>
-                <li><a href="/history">History</a></li>
-                <li><a href="/events">Events</a></li>
-                <li><a href="/museum">Museum</a></li>
-                <!--<li uib-dropdown is-open="status.isopen">
-                    <a href="/museum" uib-dropdown-toggle ng-disabled="disabled">Museum <span class="fa fa-caret-down"></span></a>
-                    <ul class="dropdown-menu" uib-dropdown-menu>
-                        <li role="menuitem"><a href="#">Exhibits</a></li>
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-click="navCollapsed=true"><a href="/about">About</a></li>
+                <li ng-click="navCollapsed=true"><a href="/history">History</a></li>
+                <li ng-click="navCollapsed=true"><a href="/events">Events</a></li>
+                <li class="btngroup" dropdown is-open="status.isopen">
+                    <a href="/museum" class="dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                        Museum <span class="caret"></span></a>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="/museum/exhibits">Exhibits</a></li>
                     </ul>
-                </li> -->
-                <li><a href="/membership">Support</a></li>
+                </li>
+                <li ng-click="navCollapsed=true"><a href="/membership">Support</a></li>
             </ul>
         </div>
     </nav>
@@ -108,8 +108,9 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-col">
                 <h4 class="footer-title">Visit Us</h4>
-                <p><strong>Address:</strong><br>000 Street Name<br>City, State Zip</p>
+                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.8505399802743!2d-84.71720358452075!3d44.66140519466946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882011411ddf3bef%3A0x22e70df983887b6!2sCrawford+County+Historical+Museum!5e0!3m2!1sen!2sus!4v1460861055692" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p><strong>Address:</strong><br>000 Street Name<br>City, State Zip</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-col">
                 <h4 class="footer-title">Share Us</h4>                

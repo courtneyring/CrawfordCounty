@@ -20,11 +20,23 @@ body{
     line-height:30px;
 }
 
-.fa-caret-down{
+.fa-bars{
     color:white;
+    font-size:28px
     
 }
 
+
+
+@media(max-width:768px){
+    .navbar-nav{
+        float:none !important;
+    }
+
+    .navbar .nav>li{
+        float:none !important;
+    }
+}
 /*.navbar .nav>li:hover>.dropdown-menu {
   display: block;
 }
@@ -42,6 +54,15 @@ body{
     padding:0px;
 }*/
 
+.btngroup:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar .nav .dropdown-toggle .caret{
+    border-top-color:white;
+    border-bottom-color:white;
+    margin-top:0px;
+}
 
 /* Hero */
 .hero{
