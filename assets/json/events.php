@@ -1,15 +1,14 @@
 <?php
 
-
-$name = $_POST['name'];
-$date = $_POST['date'];
-
 $file = "events.json";
 
-$json = json_decode(file_get_contents($file));
+$data = json_decode(file_get_contents($file));
 
-$json[] = array('name'=>$name, 'date'=>$date);
+$data[0]['date']="test";
 
-file_put_contents($file, json_encode($json));
+$newJson = json_encode($data)
+
+file_put_contents($file, json_encode($newJson));
+
 
 ?>

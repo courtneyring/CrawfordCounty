@@ -7,13 +7,27 @@ app.controller('editController', function($scope, $http) {
         {"name":"event4", "date":"7/11"}
         
     ];
+    
+    
+    $scope.change(){
+        
+        $http({
+            url: "events.php",
+                method: "POST",
+                data:{user_id:app.user_id}
+            }).success(function(data, status, headers, config) {
+                $scope.data = data;
+            }).error(function(data, status, headers, config) {
+                $scope.status = status;
+        });
+    }
 /*$http.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
 
     
     $http.get("assets/json/events.json")
     .then(function(response) {
         $scope.events = response.data;
-    });*/
+    });
     
     $scope.removeEvent=function(indexNum){
         delete $scope.events.splice(indexNum,1);
@@ -67,6 +81,6 @@ app.controller('editController', function($scope, $http) {
         .then(function(resonse){
             console.log('success');
         })
-    */}
+    }*/
     
 });

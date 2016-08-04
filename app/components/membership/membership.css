@@ -29,6 +29,22 @@
     min-height:296px;
 }
 
+@media(max-width:480px){
+    .membership, .donations, .foundation-fund{
+        margin-right:-15px;
+        margin-left:-15px;
+        margin-top:0px;
+    }
+    
+    .membership{
+        margin-top:3%;
+    }
+    
+    .footer{
+        margin-top:0px;
+    }
+}
+
 .donate-button{
         color: white;
     border: none;

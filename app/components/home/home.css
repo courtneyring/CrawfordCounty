@@ -1,3 +1,7 @@
+a{
+    color:white;
+}
+
 .home-hero{
     background-image: url("../../../assets/img/hero3.png");
     background-position: 3% 68%;
@@ -20,7 +24,7 @@
 
 #header{
     text-align: right;
-    color: white;
+    color: #FFC151;
     right: 4%;
     position: absolute;
     font-size:80px;
@@ -43,13 +47,18 @@
 
 @media(max-width:768px){
     #header{
-        display:none;
+        right:4%;
+        left:4%;
+        text-align:center;
     }
 }
 
 @media(max-width:480px){
     #header{
-        display:none;
+        right:4%;
+        left:4%;
+        text-align:center;
+        font-size:34px;
     }
 }
 
@@ -129,23 +138,30 @@
 }
 
 
+.hr{
+    visibility:hidden;
+    color:white;
+    margin-top:10%;
+}
 
-
-
+@media(max-width:992px){
+    .hr{
+        visibility:visible;
+    }
+}
 
 
 
 .feature{
     background-color: #426AAF;   
     color:white;
-    padding-bottom:200px;
     padding-left:3%;
     padding-right:3%;
 }
 
 @media(max-width:992px){
     .feature{
-        padding-bottom:50px;
+        padding-bottom:0px;
     }
 }
 
@@ -160,6 +176,9 @@
     margin-top:10%;
 }
 
+.feature-3{
+    padding-bottom:10%;
+}
 
 
 

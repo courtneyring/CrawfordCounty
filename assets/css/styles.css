@@ -3,6 +3,7 @@ body{
     padding-right:0px;
 }
 
+
 /* Navbar */
 .navbar{
     margin-bottom:0px;
@@ -37,25 +38,15 @@ body{
         float:none !important;
     }
 }
-/*.navbar .nav>li:hover>.dropdown-menu {
-  display: block;
-}
 
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
-    height: 65px;
-    line-height:33px;
-    font-size: 22px;
-    color: white;
-}
-
-#logo{
-    height:60px;
-    width:auto;
-    padding:0px;
-}*/
+/*Sub Nav*/
 
 .btngroup:hover>.dropdown-menu {
   display: block;
+}
+
+.sub-nav{
+    display:none;
 }
 
 .navbar .nav .dropdown-toggle .caret{
@@ -63,6 +54,21 @@ body{
     border-bottom-color:white;
     margin-top:0px;
 }
+
+
+@media(max-width:480px){
+    .dropdown-menu{
+        display:hidden;
+    }
+    .sub-nav{
+        display:block;
+        margin-left:20%;
+    }   
+    .caret{
+        display:none;
+    }
+}
+
 
 /* Hero */
 .hero{
@@ -91,6 +97,7 @@ body{
 .page-title-rule{
     margin-left: 4%;
     margin-right: 5%;
+    color: #d6d6d6;
 }
 
 .body-content{
@@ -98,6 +105,22 @@ body{
     margin-right:8.3333%;
 
 }
+
+@media(max-width:480px){
+    .body-content{
+    margin-left:0px;
+    margin-right:0px;
+
+    }
+}
+
+/*Fonts*/
+@media(max-width:480px){
+    h1{ 
+        font-size: 25px;
+    }
+}
+
 
 /*Footer*/
 .footer{
@@ -114,6 +137,10 @@ body{
     padding-bottom:1%;
     padding-right:2%;
     font-size:16px;
+}
+
+.footer-lower>div{
+    margin-top:-30px;
 }
 
 .footer-col{
@@ -135,7 +162,7 @@ body{
 
 iframe{
     width:100%;
-    height:240px;
+    height:215px;
 }
 
 .social-icon{
@@ -226,4 +253,11 @@ iframe{
 }
 
 
+.form-control{
+    padding:0px;
+    line-height:1;
+}
 
+.form-group{
+    margin-bottom:0px;
+}
