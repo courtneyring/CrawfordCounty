@@ -6,44 +6,44 @@ app.config(function($routeProvider, $locationProvider) {
 
 
         .when('/', {
-            templateUrl : 'app/components/home/home.html',
+            templateUrl : '/~cering/app/components/home/home.html',
             controller  : 'homeController'
         })
 
         .when('/about', {
-            templateUrl : 'app/components/about/about.html',
+            templateUrl : '/~cering/app/components/about/about.html',
             controller  : 'aboutController'
         })
     
         .when('/events', {
-            templateUrl : 'app/components/events/events.html',
+            templateUrl : '/~cering/app/components/events/events.html',
             controller  : 'editController'
         })
     
         .when('/events/edit', {
-            templateUrl : 'app/components/events/edit.html',
+            templateUrl : '/~cering/app/components/events/edit.html',
             controller  : 'editController'
         })
         .when('/membership', {
-            templateUrl : 'app/components/membership/membership.html',
+            templateUrl : '/~cering/app/components/membership/membership.html',
             controller  : 'homeController'
         })
     
         .when('/history', {
-            templateUrl : 'app/components/history/history.html',
+            templateUrl : '/~cering/app/components/history/history.html',
             controller  : 'historyController'
         })
     
         .when('/museum', {
-            templateUrl : 'app/components/museum/museum.html',
+            templateUrl : '/~cering/app/components/museum/museum.html',
             controller  : 'galleryController'
         })
         .when('/museum/exhibits', {
-            templateUrl : 'app/components/museum/exhibits/exhibits.html',
+            templateUrl : '/~cering/app/components/museum/exhibits/exhibits.html',
             controller  : 'exhibitsController'
         })
         .when('/museum/gallery', {
-            templateUrl : 'app/components/museum/gallery/gallery.html',
+            templateUrl : '/~cering/app/components/museum/gallery/gallery.html',
             controller  : 'galleryController'
         });
     
