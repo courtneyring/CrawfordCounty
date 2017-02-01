@@ -4,27 +4,24 @@
     background-size: 102%;
 }
 
-.panel1{
-
+.timeline li timeline-badge.info{
+    background-color: #426AAF !important;
 }
 
-.panel2{
-    margin-top:-25%;
+.timeline-panel .timeline-heading h4{
+    color:white;
 }
 
-.panel3{
-    margin-top:-11%;
+.timeline timeline-event timeline-panel{
+    background-color: #426AAF;
 }
 
-.panel4{
-    margin-top:-3%;
+.timeline li timeline-panel:before{
+    border-left: 15px solid #426AAF;
+    border-right: 0 solid #426AAF;
 }
 
-.panel5{
-    margin-top:-24%;
+.timeline li timeline-panel:after{
+    border-left: 14px solid #426AAF;
+    border-right: 0 solid #426AAF;
 }
-
-.panel6{
-    margin-top:-11%;
-}
-

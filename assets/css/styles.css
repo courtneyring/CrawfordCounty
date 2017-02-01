@@ -9,10 +9,13 @@ body{
     margin-bottom:0px;
     border-radius:0px;
     background-color:black;
+    min-height:70px;
     color:white;
 }
 
-
+.navbar .nav .navbar-left{
+    margin-top:0px;
+}
 
 .navbar .nav>li>a{
     text-shadow:none;
@@ -20,6 +23,42 @@ body{
     font-size:18px;
     line-height:30px;
 }
+
+.navbar-brand-mobile{
+    display:none;
+}
+
+.navbar-brand{
+    text-align: center;
+    line-height: 30px;
+}
+
+.navbar-brand>p:nth-child(1){
+    font-family: 'pinyon script', script;
+    font-weight: bold;
+    font-size: 31px;
+    font-size: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: -2px;
+}
+
+.navbar-brand>p:nth-child(2){
+    font-family: 'raleway',script;
+    font-size: 18px;
+}
+
+.navbar-nav .nav .navbar-right{
+    margin: 20px 10px 0px 0;
+}
+
+.navbar-nav .nav .navbar-right>li{
+    border-right: 1px solid white;
+}
+
+.navbar-nav .nav .navbar-right>li>a{
+    line-height:5px;
+}
+
 
 .fa-bars{
     color:white;
@@ -36,6 +75,25 @@ body{
 
     .navbar .nav>li{
         float:none !important;
+    }
+    
+    .navbar-collapse .navbar-left{
+        display:none;
+    }
+    
+    .navbar-brand-mobile{
+        display:block;
+        text-align:left;
+        line-height: 27px;
+    }
+
+    .navbar-brand-mobile>p:first-child{
+        border-bottom:0px;
+        font-size:30px;
+
+    }
+    .navbar-brand-mobile>p:last-child{
+        font-size:17px;
     }
 }
 

@@ -18,15 +18,15 @@
             <br><br>
             <timeline>
                 <timeline-event ng-repeat="event in events" side>
-                    <timeline-badge class="{{event.badgeClass}} {{event.id}}" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                    <timeline-badge class="{{event.badgeClass}}" when-visible="animateElementIn" when-not-visible="animateElementOut">
                         <i class="fa fa-asterisk"></i>
                     </timeline-badge>
-                    <timeline-panel class="{{event.badgeClass}} {{event.id}}" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                    <timeline-panel class="{{event.badgeClass}} " when-visible="animateElementIn" when-not-visible="animateElementOut">
                         <timeline-heading>
                             <h4>{{event.title}}</h4>
-                            <img class="img-responsive" src="assets/img/timeline/{{event.image}}" />
+                            <a href="/~cering/assets/img/timeline/{{event.image}}" target="_blank"><img class="img-responsive" src="assets/img/timeline/{{event.image}}" href="{{event.image}}"/></a>
                         </timeline-heading>
-                        <p>{{event.content}}</p>
+                        <!--<p>{{event.content}}</p>-->
                     </timeline-panel>
                 </timeline-event>
             </timeline>

@@ -1,6 +1,10 @@
-app.controller('historyController', function($scope) {
-  $scope.events = "timeline.json"
-    
+app.controller('historyController', function($scope, $http) {
+  //$scope.events = "timeline.json"
+  $http.get('/~cering/app/components/history/timeline.json').success(function(data) {
+        // you can do some processing here
+        $scope.events = data;
+    });    
+
     
     	// optional: not mandatory (uses angular-scroll-animate)
 	$scope.animateElementIn = function($el) {

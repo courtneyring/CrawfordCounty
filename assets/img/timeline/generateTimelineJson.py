@@ -7,10 +7,12 @@ def main():
     
     outputFile.write("[")
     
-    for file in glob.glob("*.jpg"):
+    files = glob.glob("*.jpg")
+    files.sort(key=os.path.getmtime)
+    for file in files:
         title=file.replace("-"," ").replace(".jpg","")
         title=title.title()
-        outputFile.write("{badgeClass: 'info', title: '" + title + "', image: '"+file+"'},")
+        outputFile.write("{\"badgeClass\": \"info\", \"title\": \"" + title + "\", \"image\": \""+file+"\"},")
 
     outputFile.write("]")
 

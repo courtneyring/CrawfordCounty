@@ -5,7 +5,7 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider
 
 
-        .when('/', {
+        .when('/index', {
             templateUrl : '/~cering/app/components/home/home.html',
             controller  : 'homeController'
         })

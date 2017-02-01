@@ -5,6 +5,8 @@
     <title>Crawford County Historical Society</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta charset="ut-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+   
     
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/bootstrap-combined.min.css">
@@ -12,27 +14,23 @@
 
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!--<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="assets/css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />-->
     <link rel="stylesheet" href="assets/css/angular-timeline.css" type="text/css">
     <link rel="stylesheet" href="assets/css/angular-timeline-animations.css" type="text/css">
 
     
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Pinyon+Script|Raleway" rel="stylesheet">
+
+    
     <!--JavaScript-->
-    <!--<script src="assets/js/jquery-1.12.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-touch.min.js"></script>
     <script type="text/javascript" src="assets/js/ui-bootstrap-tpls-1.3.1.min.js"></script>
-    <!--<script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>-->
     <script type="text/javascript" src="assets/js/angular-timeline.js"></script>
     <script type="text/javascript" src="assets/js/angular-scroll-animate.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.matchHeight.js"></script>
     <script src="app/app.js"></script>
 
     <!--Controllers-->
@@ -51,6 +49,10 @@
 <body ng-controller="MainCtrl">
     <nav class="navbar" role="navigation">
         <div class="navbar-header">
+            <a class="navbar-brand navbar-brand-mobile" href="/~cering/#/">
+                <p>Crawford County</p>
+                <p>Historical Society</p>
+            </a>
             <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
               <span class="sr-only">Toggle navigation</span>
               <div class="fa fa-bars"></div>
@@ -59,21 +61,12 @@
         </div>
         <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
             <ul class="nav navbar-nav navbar-left">
-                <li ng-click="navCollapsed=true"><a class="navbar-brand" href="/~cering/#/">Home</a></li>
+                <li ng-click="navCollapsed=true"><a class="navbar-brand" href="/~cering/#/" ><p>Crawford County</p><p>Historical Society</p></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li ng-click="navCollapsed=true"><a href="/~cering/#/about">About</a></li>
                 <li ng-click="navCollapsed=true"><a href="/~cering/#/history">History</a></li>
                 <li ng-click="navCollapsed=true"><a href="/~cering/#/museum">Museum</a></li>
-                <!--<li class="btngroup" dropdown is-open="status.isopen">
-                    <a href="/museum" class="dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-                        Museum <span class="caret"></span></a>
-                    <ul class="dropdown-menu pull-right" role="menu">
-                        <li><a href="/museum/exhibits">Exhibits</a></li>
-                    </ul>
-                </li>-->
-                <!-- Sub Nav Option: Mobile -->
-                <!--<li class="sub-nav"><a href="/museum/exhibits">Exhibits</a></li>-->
                 <li ng-click="navCollapsed=true"><a href="/~cering/#/membership">Support</a></li>
             </ul>
         </div>
@@ -88,7 +81,6 @@
 
     
     <div class="container-fluid footer">
-        <!--<hr class="footer-rule">-->
         <div class="row" id="hero-lower">
          </div>
         <div class="row footer-upper">
