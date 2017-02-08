@@ -1,8 +1,16 @@
 body{
     padding-left:0px;
     padding-right:0px;
+    background-color:#f5f5f5;
 }
 
+.orange{
+    background-color: #FFC151;
+}
+
+.blue{
+    background-color: #426AAF;
+}
 
 /* Navbar */
 .navbar{
@@ -24,6 +32,10 @@ body{
     line-height:30px;
 }
 
+.navbar .navbar-right li a{
+    line-height:60px;
+}
+
 .navbar-brand-mobile{
     display:none;
 }
@@ -31,7 +43,17 @@ body{
 .navbar-brand{
     text-align: center;
     line-height: 30px;
+    color:white;
 }
+
+.navbar-brand:focus, .navbar-brand:hover{
+    color:white;
+}
+
+.navbar-brand>p{
+    color:white;
+}
+
 
 .navbar-brand>p:nth-child(1){
     font-family: 'pinyon script', script;
@@ -149,13 +171,14 @@ body{
 /* Page Title */
 .page-title{
     margin-left:5%;
-    margin-top:35px;
+    margin-top: 15px;
+    color: #426AAF;
 }
 
 .page-title-rule{
     margin-left: 4%;
     margin-right: 5%;
-    color: #d6d6d6;
+    border: 1px solid #d6d6d6;
 }
 
 .body-content{
@@ -173,10 +196,26 @@ body{
 }
 
 /*Fonts*/
+p, a, h1, h2, h3, h4, h5, h6, li{
+    font-family:'Cabin', Arial;
+}
+
+p{
+    font-size:16px;
+}
+
+h1{
+    font-weight:bold;
+}
+
 @media(max-width:480px){
     h1{ 
         font-size: 25px;
     }
+}
+
+h4{
+    font-weight:700;
 }
 
 
@@ -204,6 +243,14 @@ body{
 .footer-col{
     padding-left:4%;
     padding-right:4%;
+}
+
+.footer-col form #submit{
+    margin-top: 10px;
+}
+
+.footer-col>p{
+    text-align:center;
 }
 
 .footer-title{
@@ -260,12 +307,23 @@ iframe{
     color: white;
 }
 
+[class^="icon-"], [class*=" icon-"]{
+    background-image:none;
+}
+
 .form-group{
     margin-bottom:8px;
 }
 
+@media(max-width:767px){
+    .footer-upper > .footer-col:nth-child(3){
+        padding-bottom:13%
+    }
+}
+
+
 /* Shared */
-.promo-group{
+/*.promo-group{
     height: 271px;
 }
 
@@ -279,20 +337,20 @@ iframe{
     margin-right: 1%;
     margin-left: 11.5%;
     color:black;
-    /*padding-bottom:20px;*/
+    /*padding-bottom:20px;
 }
 
 .promo-2{
     background-color:#FFC151;
-    /*padding-bottom:6%;*/
+    /*padding-bottom:6%;
 }
 
 .promo-3{
     margin-left: 1%;
     margin-right: 11.5%;
     background-color:#426AAF;
-   /* padding-bottom:6%;*/
-}
+   /* padding-bottom:6%;
+}*/
 
 .large-icon{
     font-size:71px;
@@ -318,4 +376,31 @@ iframe{
 
 .form-group{
     margin-bottom:0px;
+}
+
+.breadcrumb{
+    padding-left:5%;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    font-size:15px;
+    margin-left:-30px
+}
+
+.breadcrumb ul li a:first-child{
+    color:black;
+}
+
+.breadcrumb ul li{
+    margin-left:10px;
+    list-style:none;
+    float:left;
+}
+
+.breadcrumb ul li:before{
+    content: '\3009';
+    margin-right: 5px;
+}
+
+.breadcrumb ul li:first-child:before{
+    content:no-close-quote;
 }

@@ -1,8 +1,35 @@
 .about-hero{
-    background-image: url("../../../assets/img/MichiganAve.png");
+    background-image: url("/~cering/assets/img/MichiganAve.png");
     background-position: 94% 57%;
     background-size: 110%;
 
 }
 
+.body-content ul{
+    margin-bottom:50px;
+}
+
+.body-content ul li{
+    font-size:16px;
+    margin-bottom:10px
+}
+
+.address{
+    margin-left:50px;
+}
+
+.promo{
+    padding-bottom:50px;
+    color:black;
+}
+
+.promo:hover{
+    cursor:pointer;
+    color:black;
+    text-decoration:none;
+}
+
+.promo h3, .promo .fa{
+    color:black;
+}
 

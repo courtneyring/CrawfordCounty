@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="app/components/newsletters/newsletters.css">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12  hero newsletters-hero">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-12 breadcrumb">
+            <ul>
+                <li><a href="/~cering/#/" class="fa fa-home"></a></li>
+                <li>Newsletters</li>
+            </ul>      
+        </div>
+        <div class="col-xs-12">
+            <h1 class="page-title">Newsletters</h1>
+            <hr class="page-title-rule">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row body-content">
+        <div class="col-xs-12 current-newsletter">
+            <p>Our newsletter provides you with....  Read our latest here:</p>
+            
+            <a href="/~cering/assets/docs/CCHS-Newsletter-June-2014.pdf" target="_blank"><img src="/~cering/assets/img/june-newsletter.png" /></a>
+            <p><a href="/~cering/assets/docs/CCHS-Newsletter-June-2014.pdf" target="_blank">June 2014</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3>Archive</h3>
+            <div>
+              <uib-accordion close-others="oneAtATime">
+               
+                <div uib-accordion-group class="panel-default"  ng-repeat="group in groups" is-open="isopen" ng-click="isopen=!isopen">
+                    <uib-accordion-heading><span ng-class="{'fa fa-chevron-right':!isopen, 'fa fa-chevron-down':isopen}"></span>{{group.title}}</uib-accordion-heading>
+                    <ul>
+                        <li ng-repeat="linkName in group.content">
+                            <a href="/~cering/assets/docs/CCHS-Newsletter-{{linkName}}-{{group.title}}.pdf" target="_blank">{{linkName}}</a>
+                        </li>
+                    
+                    </ul>
+                </div>
+
+
+              </uib-accordion>
+            </div>
+
+        </div>
+    </div>
+</div>
+

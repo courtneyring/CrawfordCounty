@@ -1,0 +1,33 @@
+
+.newsletters-hero{
+    background-image: url("/~cering/assets/img/MuseumHero.jpg");
+    background-position: 100% 43%;
+    
+}
+.panel-default>.panel-heading{
+    color:white;
+    background-color:#426AAF;
+    border-color:#426AAF;
+}
+
+.panel-default>.panel-heading:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.panel-default .panel-heading .fa{
+    margin-right:10px;
+}
+
+.panel-body ul li{
+    font-size:16px;
+}
+
+.current-newsletter img{
+    width:150px;
+}
+
+.current-newsletter p a{
+    width:150px;
+    text-align:center;
+}

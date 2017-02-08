@@ -1,0 +1,84 @@
+.museum-hero{
+    background-image: url("/~cering/assets/img/gallery/gallery1.jpg");
+    background-position: 100% 43%;
+    
+}
+
+#see-more{
+    list-style-type:none;
+}
+
+.image-right{
+    float:right;
+    width:20%;
+}
+
+.image-left{
+    float:left;
+    width:20%;
+}
+
+.image-center{
+    width:50%;
+    margin:bottom:
+}
+
+.section-rule{
+    color:#d6d6d6;
+}
+
+.exhibit-links>div{
+    text-align:center;
+    margin-top:30px;
+}
+
+.body-content a img{
+    width:80%;
+    border:5px solid #797f89;
+    
+}
+
+.exhibit-body img{
+    float:left;
+    width:45%;
+    margin: 10px 2.5% 20px 2.5%;
+}
+
+@media (max-width:767px){
+    .exhibit-body img{
+        width:100%;
+        margin: 10px 0px 20px 0px;
+    }
+}
+
+.right-rail{
+    border:3px solid #d6d6d6;
+    padding:0px;
+    background-color:rgba(214,214,214,0.3);
+}
+
+.right-rail h3{
+    background-color:#FFC151;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.right-rail ul{
+    list-style-type:none;
+}
+
+.right-rail ul li{
+    margin:10px 0px;
+}
+
+.right-rail ul li a{
+    color:black;
+    font-size:16px;
+}
+
+.right-rail ul li a.active{
+    text-decoration:underline;
+    cursor:default;
+    pointer-events:none;
+}

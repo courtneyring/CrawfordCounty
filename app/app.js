@@ -1,51 +1,63 @@
 
 var app = angular.module('app', ['ngRoute', 'ui.bootstrap', 'angular-timeline', 'angular-scroll-animate']);
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider, $locationProvider, $httpProvider) {
+    
+    /*myApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {*/
+    $httpProvider.defaults.cache = false;
+    if (!$httpProvider.defaults.headers.get) {
+      $httpProvider.defaults.headers.get = {};
+    }
+    // disable IE ajax request caching
+    $httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
+
     $routeProvider
 
 
         .when('/index', {
-            templateUrl : '/~cering/app/components/home/home.html',
+            templateUrl : '/~cering/app/components/home/index.html',
+            controller  : 'homeController'
+        })
+        .when('/', {
+            templateUrl : '/~cering/app/components/home/index.html',
             controller  : 'homeController'
         })
 
         .when('/about', {
-            templateUrl : '/~cering/app/components/about/about.html',
+            templateUrl : '/~cering/app/components/about/index.html',
             controller  : 'aboutController'
         })
-    
-        .when('/events', {
-            templateUrl : '/~cering/app/components/events/events.html',
-            controller  : 'editController'
+
+        .when('/about/support', {
+            templateUrl : '/~cering/app/components/about/support.html'
         })
     
-        .when('/events/edit', {
-            templateUrl : '/~cering/app/components/events/edit.html',
-            controller  : 'editController'
-        })
-        .when('/membership', {
-            templateUrl : '/~cering/app/components/membership/membership.html',
-            controller  : 'homeController'
+        .when('/about/board-of-directors', {
+            templateUrl : '/~cering/app/components/about/board-of-directors.html'
         })
     
         .when('/history', {
-            templateUrl : '/~cering/app/components/history/history.html',
+            templateUrl : '/~cering/app/components/history/index.html',
             controller  : 'historyController'
         })
+        .when('/newsletters', {
+            templateUrl : '/~cering/app/components/newsletters/index.html',
+            controller  : 'newslettersController'
+
+        })
+        .when('/contact', {
+            templateUrl : '/~cering/app/components/contact/index.html'
+
+        })
+        .when('/exhibits', {
+            templateUrl : '/~cering/app/components/exhibits/index.html'
+        })
     
-        .when('/museum', {
-            templateUrl : '/~cering/app/components/museum/museum.html',
-            controller  : 'galleryController'
-        })
-        .when('/museum/exhibits', {
-            templateUrl : '/~cering/app/components/museum/exhibits/exhibits.html',
-            controller  : 'exhibitsController'
-        })
-        .when('/museum/gallery', {
-            templateUrl : '/~cering/app/components/museum/gallery/gallery.html',
-            controller  : 'galleryController'
+        .when('/exhibits/:exhibit_id', {
+            templateUrl : function(params){return '/~cering/app/components/exhibits/'+ params.exhibit_id+'.html'; }
+    
         });
+   
     
         /*$locationProvider.html5Mode(true);*/
 });
