@@ -1,15 +1,31 @@
+<link rel="stylesheet" href="app/components/contact/contact.css">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12  hero contact-hero">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-12 breadcrumb">
+            <ul>
+                <li><a href="/~cering/#/" class="fa fa-home"></a></li>
+                <li>Contact</li>
+            </ul>
+            
+            
+        </div>
+        <div class="col-xs-12">
+            <h1 class="page-title">Contact Us</h1>
+            <hr class="page-title-rule">
+        </div>
+    
+    </div>
+
+</div>
 <div class="container-fluid">
     <div class="row body-content">
-        <div class="col-xs-12">
-            <h3>Current Exhibits</h3>
-            <ul class="exhibits-list">
-                <li>Grayling Depot Station</li>
-                <li>Au Sable River History</li>
-                <li>Life in the Early 1900s</li>
-                <li>History of Hanson Hills</li>
-                <li id="see-more"><a href="/museum/exhibits/">See More</a></li>
-            </ul>
-        </div>
+        
         <div class="col-xs-12">
             <h3>Visit</h3>
         </div>
@@ -34,6 +50,28 @@
             
             </p>
         </div>
-        <div class="hidden-xs hidden-sm col-md-1"></div>
+        
     </div>
+    <div class="row body-content">
+        <div class="col-xs-12">
+            <h3>We want to hear from you:</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <form role="form" method="post" onsubmit="successMessage()" action="mailer.php">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                            </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" class="form-control" rows="5" id="message"></textarea>
+                    </div>
+                    <input type="submit" name="submit" id="submit" class="btn btn-default" value="Send">
+                </form>
+        </div>
+        </div>
 </div>
