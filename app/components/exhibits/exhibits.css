@@ -1,5 +1,5 @@
 .museum-hero{
-    background-image: url("/~cering/assets/img/gallery/gallery1.jpg");
+    background-image: url("/assets/img/gallery/gallery1.jpg");
     background-position: 100% 43%;
     
 }
@@ -32,11 +32,7 @@
     margin-top:30px;
 }
 
-.body-content a img{
-    width:80%;
-    border:5px solid #797f89;
-    
-}
+
 
 .exhibit-body img{
     float:left;
@@ -82,3 +78,54 @@
     cursor:default;
     pointer-events:none;
 }
+
+/*.body-content a img{
+    width:80%;
+    
+    
+}*/
+
+
+.exhibit-links>div>a>div{
+    border:5px solid #797f89;
+    width:100%;
+    height:250px;
+    background-size:cover;
+    background-position:center center;
+}
+
+.ticket-office{
+    background-image: url('/assets/img/exhibits/ticket-office.jpg')
+}
+
+.lumbermans-tools{
+    background-image: url('/assets/img/exhibits/lumbermans-tools.jpg')
+}
+
+.ausable-river{
+    background-image: url('/assets/img/exhibits/ausable-river.jpg')
+}
+
+.fishing-in-grayling{
+    background-image: url('/assets/img/exhibits/fishing-in-grayling.jpg')
+}
+
+.life-in-grayling{
+    background-image: url('/assets/img/exhibits/life-in-grayling.jpg');
+    background-position: 100% 17% !important;
+}
+
+.fred-bear-exhibit{
+    background-image: url('/assets/img/exhibits/fred-bear-exhibit.jpg')
+}
+
+.exhibits-adjacent{
+    background-image: url('/assets/img/exhibits/exhibits-adjacent.jpg');
+    background-size:112% !important;
+}
+
+.museum-gift-shop{
+    background-image: url('/assets/img/exhibits/museum-gift-shop.jpg')
+}
+
+

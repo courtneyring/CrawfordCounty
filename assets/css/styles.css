@@ -227,7 +227,7 @@ h4{
 }
 
 .footer-upper{
-
+    padding-bottom:25px;
 }
 
 .footer-lower{
@@ -250,13 +250,24 @@ h4{
 }
 
 .footer-col>p{
-    text-align:center;
+    text-align:left;
+}
+
+.contact-block{
+    margin:0 35px;
+}
+
+.contact-block>p{
+    display:inline-block;
+    margin-left:10px;
+    vertical-align:text-top;
 }
 
 .footer-title{
     font-size: 20px;
     text-align:center;
     color:white;
+    margin-bottom:25px;
 }
 
 .footer-rule{
@@ -277,29 +288,25 @@ iframe{
 .facebook-icon, .facebook-icon>a{
     text-align:right;
     color:#3b5998;
-    padding-right:2%;
-    margin-top:5.5%;
+    padding-right:0px;
 }
 
 .linkedin-icon, .linkedin-icon>a{
     text-align:right;
     color:#007bb5;
-    margin-top:4%;
-    padding-right:2%;
+    padding-right:0px;
 }
 
 .twitter-icon, .twitter-icon>a{
     text-align:left;
     color:#55acee;
-    padding-left:2%;
-    margin-top:5.5%;
+    padding-left:0px;
 }
 
 .email-icon, .email-icon>a{
     text-align:left;
-    margin-top:4%;
     color:#a5abaf;
-    padding-left:2%;
+    padding-left:0px;
 }
 
 
@@ -321,36 +328,6 @@ iframe{
     }
 }
 
-
-/* Shared */
-/*.promo-group{
-    height: 271px;
-}
-
-.promo-1, .promo-2, .promo-3{
-    color:black;
-    height:100%;
-}
-
-.promo-1{
-    background-color:#426AAF;
-    margin-right: 1%;
-    margin-left: 11.5%;
-    color:black;
-    /*padding-bottom:20px;
-}
-
-.promo-2{
-    background-color:#FFC151;
-    /*padding-bottom:6%;
-}
-
-.promo-3{
-    margin-left: 1%;
-    margin-right: 11.5%;
-    background-color:#426AAF;
-   /* padding-bottom:6%;
-}*/
 
 .large-icon{
     font-size:71px;

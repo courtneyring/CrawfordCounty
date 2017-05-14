@@ -1,6 +1,6 @@
 app.controller('historyController', function($scope, $http) {
   //$scope.events = "timeline.json"
-  $http.get('/~cering/app/components/history/timeline.json').success(function(data) {
+  $http.get('/app/components/history/timeline.json').success(function(data) {
         // you can do some processing here
         $scope.events = data;
     });    

@@ -13,48 +13,45 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
 
     $routeProvider
 
-
         .when('/index', {
-            templateUrl : '/~cering/app/components/home/index.html',
-            controller  : 'homeController'
+            templateUrl : '/app/components/home/index.html',
         })
         .when('/', {
-            templateUrl : '/~cering/app/components/home/index.html',
-            controller  : 'homeController'
+            templateUrl : '/app/components/home/index.html',
         })
 
         .when('/about', {
-            templateUrl : '/~cering/app/components/about/index.html',
-            controller  : 'aboutController'
+            templateUrl : '/app/components/about/index.html',
         })
 
         .when('/about/support', {
-            templateUrl : '/~cering/app/components/about/support.html'
+            templateUrl : '/app/components/about/support.html'
         })
     
         .when('/about/board-of-directors', {
-            templateUrl : '/~cering/app/components/about/board-of-directors.html'
+            templateUrl : '/app/components/about/board-of-directors.html'
         })
     
         .when('/history', {
-            templateUrl : '/~cering/app/components/history/index.html',
+            templateUrl : '/app/components/history/index.html',
             controller  : 'historyController'
         })
         .when('/newsletters', {
-            templateUrl : '/~cering/app/components/newsletters/index.html',
+            templateUrl : '/app/components/newsletters/index.html',
             controller  : 'newslettersController'
 
         })
         .when('/contact', {
-            templateUrl : '/~cering/app/components/contact/index.html'
+            templateUrl : '/app/components/contact/index.html',
+            controller : 'contactController'
 
         })
         .when('/exhibits', {
-            templateUrl : '/~cering/app/components/exhibits/index.html'
+            templateUrl : '/app/components/exhibits/index.html'
         })
     
         .when('/exhibits/:exhibit_id', {
-            templateUrl : function(params){return '/~cering/app/components/exhibits/'+ params.exhibit_id+'.html'; }
+            templateUrl : function(params){return '/app/components/exhibits/'+ params.exhibit_id+'.html'; }
     
         });
    
@@ -85,7 +82,12 @@ app.controller('aboutController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
-app.controller('MainCtrl', function($scope) {
-    $scope.name = 'World';
+app.controller('MainCtrl', function($scope, $location, $window) {
+    $scope.$on('$routeChangeSuccess', function () {
+        document.getElementById("url").value = window.location.href;
+        //$scope.url = window.location.href;
+        $window.ga('send', 'pageview', { page: $location.url() });
+        console.log($location.url());
+    });
 });
 
