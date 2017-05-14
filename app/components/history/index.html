@@ -22,6 +22,16 @@
     </div>
 
     <div class="row body-content">
+        <div clas="col-xs-12">
+            <ul class="nav nav-pills">
+                <li ng-class="{active: selected==='downtown'}" ng-click="getEvents('downtown')"><a >Downtown Grayling</a></li>
+                <li ng-class="{active: selected==='fish'}"  ng-click="getEvents('fish')"><a >Fish Hatchery</a></li>
+                <li ng-class="{active: selected==='railroad'}" ng-click="getEvents('railroad')"><a >Railroad</a></li>
+                <li ng-class="{active: selected==='people'}" ng-click="getEvents('people')"><a >People</a></li>
+                <li ng-class="{active: selected==='houses'}" ng-click="getEvents('houses')"><a >Houses</a></li>
+                <li ng-class="{active: selected==='other'}" ng-click="getEvents('other')"><a>Other</a></li>
+            </ul>
+        </div>
         <div class="col-xs-12">
             <br><br>
             <timeline>
