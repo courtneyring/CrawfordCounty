@@ -51,8 +51,8 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
         })
     
         .when('/exhibits/:exhibit_id', {
-            templateUrl : function(params){return '/app/components/exhibits/'+ params.exhibit_id+'.html'; }
-    
+            templateUrl : function(params){return '/app/components/exhibits/'+ params.exhibit_id+'.html'; },
+            controller : "exhibitsController"
         });
    
     
@@ -87,7 +87,6 @@ app.controller('MainCtrl', function($scope, $location, $window) {
         document.getElementById("url").value = window.location.href;
         //$scope.url = window.location.href;
         $window.ga('send', 'pageview', { page: $location.url() });
-        console.log($location.url());
     });
 });
 
