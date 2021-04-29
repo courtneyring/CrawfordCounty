@@ -9,7 +9,7 @@
     $subject = 'New Message from CrawfordCountyHistoricalSociety.com';
     
     $message = "From: $name\n E-Mail: $email\n Message:\n $message";
-    $headers = 'From: "Crawford County Historical Society" <hello@crawfordcountyhistoricalsociety.com>' . "\r\n" . 'Reply-to:' . $email;
+    $headers = 'From: "Crawford County Historical Society" <cchsgrayling@gmail.com>' . "\r\n" . 'Reply-to:' . $email;
 
         
     if ($_POST['submit']) {
