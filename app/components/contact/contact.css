@@ -4,3 +4,19 @@
     background-size: 110%;
 
 }
+
+.email-link {
+    color: #426AAF;
+    font-size: 18px;
+}
+
+.fa-envelope {
+    color: #426AAF;
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.contact-link {
+    align-items: center;
+    display: flex;
+}

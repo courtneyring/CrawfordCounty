@@ -4,7 +4,7 @@
     $message = $_POST['message'];
     $url = $_POST['url'];
    // $from = 'hello@crawfordcountyhistoricalsociety.com';
-    $to = '"Crawford County Historical Society" <cchsgrayling@gmail.com>';
+    $to = '"Crawford County Historical Society" <courtneyring@outlook.com>';
     //$to = "ce.ring@comcast.net";
     $subject = 'New Message from CrawfordCountyHistoricalSociety.com';
     
