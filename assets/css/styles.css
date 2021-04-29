@@ -227,8 +227,8 @@ h4{
 }
 
 .footer-upper{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     padding-bottom:25px;
 }
 
@@ -247,13 +247,13 @@ h4{
     padding-right:4%;
 }
 
-.footer-col:first-child {
+/* .footer-col:first-child {
     align-self: flex-start;
 }
 
 .footer-col:last-child {
     align-self: flex-end;
-}
+} */
 
 .footer-col form #submit{
     margin-top: 10px;
