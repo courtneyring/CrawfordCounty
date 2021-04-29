@@ -4,12 +4,12 @@
     $message = $_POST['message'];
     $url = $_POST['url'];
    // $from = 'hello@crawfordcountyhistoricalsociety.com';
-    $to = '"Crawford County Historical Society" <museumcchs97@gmail.com>';
+    $to = '"Crawford County Historical Society" <cchsgrayling@gmail.com>';
     //$to = "ce.ring@comcast.net";
     $subject = 'New Message from CrawfordCountyHistoricalSociety.com';
     
     $message = "From: $name\n E-Mail: $email\n Message:\n $message";
-    $headers = 'From: "Crawford County Historical Society" <cchsgrayling@gmail.com>' . "\r\n" . 'Reply-to:' . $email;
+    $headers = 'From: "Crawford County Historical Society" <hello@crawfordcountyhistoricalsociety.com>' . "\r\n" . 'Reply-to:' . $email;
 
         
     if ($_POST['submit']) {
