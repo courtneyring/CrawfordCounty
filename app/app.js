@@ -25,7 +25,8 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
         })
 
         .when('/about/support', {
-            templateUrl : '/app/components/about/support.html'
+            templateUrl : '/app/components/about/support.html',
+            controller  : 'supportController'
         })
     
         .when('/about/board-of-directors', {

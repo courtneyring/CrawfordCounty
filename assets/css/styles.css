@@ -391,3 +391,7 @@ iframe{
 .breadcrumb ul li:first-child:before{
     content:no-close-quote;
 }
+
+.paypal-button-number-0   {
+    display: none !important;
+}

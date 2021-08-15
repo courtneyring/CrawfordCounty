@@ -39,25 +39,31 @@
                 97 East Michigan Avenue<br>
                 P.O. Box 218<br>
                 Grayling, MI 49738<br>
-                989-745-3493
+                989-745-3493<br><br>
+                <a  class='email-link' href="mailto:cchsgrayling@gmail.com"><i class='fa fa-envelope'></i> Send us an email</a>
             </p>
         </div>
         <div class="col-xs-12 col-md-4 museum-address">
             <p><strong>Hours of Operation</strong><br>
                 <i>Starting July 1, 2021:</i><br>
                 Thursday-Saturday 10am-4pm<br><br>
-                Free admission, donations gladly accepted. 
+                Free admission, donations gladly accepted at the museum or online: 
             </p>
+            <div class='donate-container' id='donate-container'>
+                <input placeholder='Enter Donation Amount' id='donate-amount' type='number' min="0.00" max="10000.00" step="0.01"/>
+                <div id="paypal-button-container"></div>
+            </div>
+            
         </div>
         
     </div>
-    <div class="row body-content">
+    <!-- <div class="row body-content">
         <div class="col-xs-12">
             <h3>We want to hear from you:</h3>
         </div>
         <div class="col-xs-12 col-sm-6 contact-link">
-            <i class='fa fa-envelope'></i>
-            <a  class='email-link' href="mailto:cchsgrayling@gmail.com">Send us an email</a>
+            <i class='fa fa-envelope'></i> -->
+            
             <!-- <form role="form" method="post">
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -76,12 +82,39 @@
                     
                 </form> -->
             
-        </div>
-        </div>
+        <!-- </div>
+        </div> -->
 </div>
-<script type="text/javascript">
-    $(function() { 
-        
-        console.log("test");
-     });
-</script>
+<!-- <script>
+    console.log('testtest')
+    paypal.Buttons({
+
+      // Sets up the transaction when a payment button is clicked
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '0.01' // Can reference variables or functions. Example: `value: document.getElementById('...').value`
+            }
+          }]
+        });
+      },
+
+      // Finalize the transaction after payer approval
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(orderData) {
+          // Successful capture! For dev/demo purposes:
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              var transaction = orderData.purchase_units[0].payments.captures[0];
+            //   alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+          // When ready to go live, remove the alert and show a success message within this page. For example:
+          var element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+          // Or go to another URL:  actions.redirect('thank_you.html');
+        });
+      }
+    }).render('#paypal-button-container');
+
+  </script> -->

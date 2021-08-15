@@ -49,3 +49,13 @@
     border: none;
     background-color: #EB4D4D;
 }
+
+.donate-container {
+    max-width: 200px;
+
+    
+}
+
+.donate-container > input {
+    width: 100%;
+}

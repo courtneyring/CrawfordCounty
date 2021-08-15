@@ -20,3 +20,22 @@
     align-items: center;
     display: flex;
 }
+
+.donate-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+
+.donate-container > input {
+    height: 31px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.fa-phone {
+    font-size: 20px;
+    margin-right: 5px;
+}
