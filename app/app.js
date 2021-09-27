@@ -15,9 +15,11 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
 
         .when('/index', {
             templateUrl : '/app/components/home/index.html',
+            controller: 'indexController'
         })
         .when('/', {
             templateUrl : '/app/components/home/index.html',
+            controller: 'indexController'
         })
 
         .when('/about', {
@@ -30,7 +32,8 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
         })
     
         .when('/about/board-of-directors', {
-            templateUrl : '/app/components/about/board-of-directors.html'
+            templateUrl : '/app/components/about/board-of-directors.html', 
+            
         })
     
         .when('/history', {

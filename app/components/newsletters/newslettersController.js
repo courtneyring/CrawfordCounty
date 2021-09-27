@@ -3,6 +3,10 @@ app.controller('newslettersController', function($scope) {
 
       $scope.groups = [
           {
+              title: '2021',
+              content: ['June']
+          },
+          {
               title: '2014',
               content: ['Spring','June','Winter']
           },

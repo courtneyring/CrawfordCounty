@@ -395,3 +395,17 @@ iframe{
 .paypal-button-number-0   {
     display: none !important;
 }
+
+.donate-button{
+    color: white;
+    border: none;
+    background-color: #EB4D4D;
+}
+
+.donate-container {
+    max-width: 200px;
+}
+
+.donate-container > input {
+    width: 100%;
+}
