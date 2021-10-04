@@ -21,7 +21,9 @@
     <div class="row body-content">
         <div class="col-xs-12 col-sm-8 exhibit-body">
             <p>The big center room downstairs features our collection of photos and artifacts from the Salling & Hanson offices and other lumbering interests and tools. The Skingley dollhouse is still here as well as an historical kitchen corner.</p>
-
+            <div ng-repeat="n in range(1, 4)">
+                <img src='/assets/img/gallery/lumber/img{{n}}.JPG'>
+              </div>
          </div> 
         <ng-include src="'/app/components/exhibits/exhibits-right-rail.html'"></ng-include>
     </div>

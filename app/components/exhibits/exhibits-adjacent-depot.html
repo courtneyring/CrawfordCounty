@@ -31,7 +31,9 @@
             <h3>Farm Display</h3>
             <p>Dedicated to the memory of past Board President Jim Smith, the farm display is under the awning on the north side of the fire barn. Many old farm implements are displayed here, including a 1949 Massey-Harris Pony tractor and a hand-operated grain mill. This display was made possible by donations from the community and through the generosity and work of Weyerhaeuser, Great Lakes Energy, SMK Construction, Milliken’s Excavating and the Michigan Economic Development Corporation. Our grateful thanks go out to all of them. </p>
             
-
+            <div ng-repeat="n in range(1, 13)">
+                <img src='/assets/img/gallery/adjacent/img{{n}}.JPG'>
+              </div>
             
         </div> 
         <ng-include src="'/app/components/exhibits/exhibits-right-rail.html'"></ng-include>

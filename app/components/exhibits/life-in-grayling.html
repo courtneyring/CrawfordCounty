@@ -21,7 +21,9 @@
     <div class="row body-content">
         <div class="col-xs-12 col-sm-8 exhibit-body">
             <p>Venture upstairs and you’ll fine the hallway and rooms full of photos and artifacts, including an Old School Room, the Pioneer Room, the Business Room, the Old Mercantile, Hartwick Pines, Pere Cheney display, old school class photos, the Native Room, Winter Sports, the Doctors’ Room, the Ladies’ Display, the Saloon, and the Family Room featuring photos from various families that lived in the county.</p>
-
+            <div ng-repeat="n in range(1, 9)">
+                <img src='/assets/img/gallery/county/img{{n}}.JPG'>
+              </div>
         </div> 
         <ng-include src="'/app/components/exhibits/exhibits-right-rail.html'"></ng-include>
     </div>

@@ -21,7 +21,9 @@
     <div class="row body-content">
         <div class="col-xs-12 col-sm-8 exhibit-body">
             <p>This room at the top of the stairs commemorates those who served in law enforcement in Grayling and the County. Many photos and artifacts will bring back memories of times past. The latest addition to this room is a memorial to Kirk Wakefield, our beloved sheriff, donated by his wife, Dawn. </p>
-
+            <div ng-repeat="n in range(1, 2)">
+                <img src='/assets/img/gallery/law/img{{n}}.JPG'>
+              </div>
         </div> 
         <ng-include src="'/app/components/exhibits/exhibits-right-rail.html'"></ng-include>
     </div>

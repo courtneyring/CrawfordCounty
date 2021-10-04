@@ -21,6 +21,9 @@
     <div class="row body-content">
         <div class="col-xs-12 col-sm-8 exhibit-body">
             <p>The original lobby of the train depot, which was built in 1882, is our operations center and features our collection of photos and artifacts related to all things train! Featuring and HO scale model of the original railroad complex here in Grayling, including the original blueprints for the station, railroad enthusiasts will love our historical collection.</p>
+            <div ng-repeat="n in range(1, 5)">
+                <img src='/assets/img/gallery/train/img{{n}}.JPG'>
+              </div>
         </div> 
         <ng-include src="'/app/components/exhibits/exhibits-right-rail.html'"></ng-include>
     </div>

@@ -20,7 +20,7 @@
 
 .image-center{
     width:50%;
-    margin:bottom:
+    margin:bottom;
 }
 
 .section-rule{
@@ -90,7 +90,7 @@
     border:5px solid #797f89;
     width:100%;
     height:250px;
-    background-size:cover;
+    background-size: cover;
     background-position:center center;
 }
 
@@ -106,8 +106,8 @@
     background-image: url('/assets/img/exhibits/ausable-river.jpg')
 }
 
-.fishing-in-grayling{
-    background-image: url('/assets/img/exhibits/fishing-in-grayling.jpg')
+.law-enforcement{
+    background-image: url('/assets/img/exhibits/law-enforcement.jpg')
 }
 
 .life-in-grayling{

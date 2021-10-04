@@ -21,7 +21,9 @@
     <div class="row body-content">
         <div class="col-xs-12 col-sm-8 exhibit-body">
             <p>The museum’s collection of Fred Bear bows, photos, and a few critters, is at the top of the stairs. You can’t miss it!</p>
-
+            <div ng-repeat="n in range(1, 2)">
+                <img src='/assets/img/gallery/fred-bear/img{{n}}.JPG'>
+              </div>
         </div> 
         <ng-include src="'/app/components/exhibits/exhibits-right-rail.html'"></ng-include>
     </div>
