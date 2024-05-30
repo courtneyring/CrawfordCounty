@@ -409,3 +409,9 @@ iframe{
 .donate-container > input {
     width: 100%;
 }
+
+@media (min-width: 768px) {
+  a:hover {
+    cursor: pointer;
+  }
+}

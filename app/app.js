@@ -22,6 +22,9 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
             controller: 'indexController'
         })
 
+        .when('/events', {
+            templateUrl : '/app/components/events/index.html'
+        })
         .when('/about', {
             templateUrl : '/app/components/about/index.html',
         })
