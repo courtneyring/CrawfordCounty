@@ -23,7 +23,8 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
         })
 
         .when('/events', {
-            templateUrl : '/app/components/events/index.html'
+            templateUrl : '/app/components/events/index.html', 
+            controller: 'eventsController'
         })
         .when('/about', {
             templateUrl : '/app/components/about/index.html',
